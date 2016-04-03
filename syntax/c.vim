@@ -453,7 +453,7 @@ syn match cLink "\."
 
 
 syn region cParallel matchgroup=cFun start="(" end=")" contains=cFunStart,cParallel,cDot,cNumber,cConstant,cString
-syn region cFunStart matchgroup=cFun start="[A-Za-z_]\{1,}(" end=")" contains=cFunStart,cParallel
+syn region cFunStart matchgroup=cFun start="[A-Za-z_0-9]\{1,}(" end=")" contains=cFunStart,cParallel
 syn match cFun '[?:]'
 syn match cDot contained ',' 
 hi cDot gui=italic guifg=#ffa0a0
